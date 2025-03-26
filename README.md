@@ -13,9 +13,9 @@
 a. Buka Terminal WSL
 
 b. Jalankan perintah berikut:
-```
-ssh-keygen
-```
+   ```
+   ssh-keygen
+   ```
 
 #### Contoh
 
