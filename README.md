@@ -8,13 +8,12 @@
 * [Perintah tambahan](https://github.com/datascienceid/README#perintah-tambahan)
 * [gitignore](https://github.com/datascienceid/README#gitignore)
 
-## 1. Mengunduh Repository
+## 1. Membuat SSH Key Di linux (WSL)
 
-Unduh repository ke dalam komputer menggunakan perintah `git clone`. Url
-repository dapat dilihat di dalam repository yang diinginkan.
-
+a. Buka Terminal WSL 
+b. Jalankan perintah berikut:
 ```
-git clone <url repository> <folder tujuan>
+ssh-keygen
 ```
 
 #### Contoh
