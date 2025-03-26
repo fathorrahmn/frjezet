@@ -1,6 +1,6 @@
 # Comprehensive Guide to STB Dashboard Setup and Configuration: Installation, Deployment, Database Migration with Docker and Microservices
 
-* [Mengunduh repository ke dalam komputer](https://github.com/e-inwork/stb/README#mengunduh-repository)
+* [1. Membuat SSH Key Di linux (WSL)](https://github.com/e-inwork/stb/README#mengunduh-repository)
 * [Memperbarui repository yang telah diunduh](https://github.com/datascienceid/README#memperbarui-repository)
 * [Mengunggah perubahan ke dalam repository](https://github.com/datascienceid/README#mengunggah-perubahan)
 * [Menghapus file](https://github.com/datascienceid/README#menghapus-file)
@@ -21,6 +21,10 @@ c. Masukkan lokasi penyimpanan key (tekan ENTER untuk default ~/.ssh/id_rsa):
    Enter file in which to save the key (/home/user/.ssh/id_rsa): [Tekan ENTER]
    ```
 d. Buat passphrase (opsional, kosongkan jika tidak ingin password):
+   ```
+   Enter passphrase (empty for no passphrase): [Masukkan password atau tekan ENTER]
+   ```
+
 
 
 #### Contoh
