@@ -90,5 +90,10 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
 * Masuk ke repository ```Ubuntu@MSI:~/projects/stb/microservice$/groupuser-service```
 * Jalankan Group User Service dengan ```docker compose up -d```
 
+## Setelah semua berjalan, cek Proxy Service, envoy, dan port. Jika lengkap, 
+* buka browser dan masukkan ```localhost:9901```
+* Proxy bertujuan menyambungkan semua network ke satu port dengan berbagai jenis port.
+* Untuk melihat yang sudah digabungkan dalam satu proxy, buka browser. Di daftar command, cari clusters untuk menampilkan berbagai proxy.
+
 
 
