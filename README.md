@@ -1,7 +1,7 @@
 # Comprehensive Guide to STB Dashboard Setup and Configuration: Installation, Deployment, Database Migration with Docker and Microservices
 
 * [1. Membuat SSH Key Di linux (WSL)](https://github.com/e-inwork/stb/README#mengunduh-repository)
-* [Memperbarui repository yang telah diunduh](https://github.com/datascienceid/README#memperbarui-repository)
+* [2. Git Clone dari GitHub menggunakan SSH Key](https://github.com/datascienceid/README#memperbarui-repository)
 * [Mengunggah perubahan ke dalam repository](https://github.com/datascienceid/README#mengunggah-perubahan)
 * [Menghapus file](https://github.com/datascienceid/README#menghapus-file)
 * [Branching](https://github.com/datascienceid/README#branching)
@@ -33,20 +33,17 @@
    ssh-xxx AAA sampai akhir
    ```
 
-#### Contoh
+## 2. Git Clone dari GitHub menggunakan SSH Key
+* Perbarui repository yang telah diunduh ke dalam komputer menggunakan perintah
+* Masuk ke GitHub → Settings → SSH and GPG keys → New SSH key
+* Paste SSH Public Key
+* Klik Add SSH key
 
-```
-user@host:~$ git clone https://github.com/datascienceid/instagram.git instagram
-Cloning into 'instagram'...
-remote: Counting objects: 4, done.
-remote: Compressing objects: 100% (4/4), done.
-remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
-Unpacking objects: 100% (4/4), done.
-```
+Paste SSH Public Key
 
-## Memperbarui Repository
+Klik Add SSH key
 
-Perbarui repository yang telah diunduh ke dalam komputer menggunakan perintah
+
 `git pull`.
 
 ```
