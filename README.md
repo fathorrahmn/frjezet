@@ -34,20 +34,12 @@
    ```
 
 ## 2. Git Clone dari GitHub menggunakan SSH Key
-* Perbarui repository yang telah diunduh ke dalam komputer menggunakan perintah
 * Masuk ke GitHub → Settings → SSH and GPG keys → New SSH key
 * Paste SSH Public Key
 * Klik Add SSH key
-
-Paste SSH Public Key
-
-Klik Add SSH key
-
-
-`git pull`.
-
+* Setelah SSH key berhasil dikonfigurasi, jalankan perintah berikut untuk clone repository:
 ```
-git pull origin <nama branch>
+git clone git@github.com:username/repository.git
 ```
 
 #### Contoh
