@@ -38,9 +38,9 @@
 * Paste SSH Public Key
 * Klik Add SSH key
 * Setelah SSH key berhasil dikonfigurasi, jalankan perintah berikut untuk clone repository:
-```
-git clone git@github.com:username/repository.git
-```
+   ```
+   git clone git@github.com:e-inwork/stb.git
+   ```
 
 #### Contoh
 
