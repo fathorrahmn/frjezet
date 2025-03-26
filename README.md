@@ -16,6 +16,8 @@ b. Jalankan perintah berikut:
    ```
    ssh-keygen
    ```
+c. Enter file in which to save the key (/home/user/.ssh/id_rsa): [Tekan ENTER]
+d. 
 
 #### Contoh
 
