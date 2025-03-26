@@ -56,8 +56,33 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
 * Buat service network ```docker network create sercive_network```
 * Jalankan service network dengan ```docker compose up -d``` 
 
+**Lakukan migrate Di DB Service**
+* Masuk ke app container yoyo:
+   ```
+   docker compose run yoyo service bash
+   ```
+   (Menandakan sudah masuk ke container yoyo)
 
-**Tambah beberapa file baru atau ubah beberapa file sekaligus**
+* Cek tabel di DB Service (tabel belum ada dan perlu dicek):
+   Jalankan:
+   ```
+   docker ps
+   ```
+  (Cek container yang berjalan, pastikan ada ```db-service-yoyo``` & ```db_service```)
+  
+* Kettikan perintiah berikut : Docker compose run yoyo sercive bash
+  ket. Ini menandakaan sudah masuk ke app container yoyo
+* migratte tabel yang ada di DB service, tabel ini masih belum ada dan harus di cek.
+* Cara cek table, klik tab di terminal. Masukskan perint docker ps, untuk melihat docker yang sedang berjalan. Diposisi NAMES ada dua yang jalan db-service-yoyo & db_sercive  
+* Cara masuk ke SQL, Cara masuk sama ke sql dengan cara : docker compose exec db_service bash jangan menggunakan run lagi karena sudah jalan
+  Dan posisi ini sudah masuk di containernya DB-SERVICE, 
+* setelah masuk ke containernya db sercive harus masuk ke usernya postgres. Dg cara  su – postgres
+* Untuk lebih mendalam ke data base nya masukkan perintah psql (enter)
+* Bagaimana cara melihat psql : \l (list of database), kalo untuk melihat table \dt (list of relation)
+* Tapi tabel yang dimaksud di db service belum ada
+* Untuk mengaktifkan tabel yang dimaksud dg cara kettikan perintah berikut : yoyo apply
+* Kemudian disitu ditanya apakah mau memigration : maka jawab Y
+
 ```
 git add .
 ```
