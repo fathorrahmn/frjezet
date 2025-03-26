@@ -11,7 +11,6 @@
 ## Membuat SSH Key Di linux (WSL)
 
 * Buka Terminal WSL
-
 * Jalankan perintah berikut:
    ```
    ssh-keygen
@@ -61,7 +60,7 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
    ```
    docker compose run yoyo service bash
    ```
-   (Menandakan sudah masuk ke container yoyo)
+   _Menandakan sudah masuk ke container yoyo)
 
 * Cek tabel di DB Service (tabel belum ada dan perlu dicek):
    Jalankan:
