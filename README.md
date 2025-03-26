@@ -90,7 +90,7 @@ su – postgres
    yoyo apply
    ```
    Saat diminta konfirmasi migrasi, ketik Y.
-
+-------------------------
 
 * Kettikan perintiah berikut : Docker compose run yoyo sercive bash
   ket. Ini menandakaan sudah masuk ke app container yoyo
