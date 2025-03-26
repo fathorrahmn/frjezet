@@ -8,7 +8,7 @@
 * [Perintah tambahan](https://github.com/datascienceid/README#perintah-tambahan)
 * [gitignore](https://github.com/datascienceid/README#gitignore)
 
-## Mengunduh Repository
+## 1. Mengunduh Repository
 
 Unduh repository ke dalam komputer menggunakan perintah `git clone`. Url
 repository dapat dilihat di dalam repository yang diinginkan.
