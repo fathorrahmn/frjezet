@@ -20,8 +20,8 @@ c. Masukkan lokasi penyimpanan key (tekan ENTER untuk default ~/.ssh/id_rsa):
    ```
    Enter file in which to save the key (/home/user/.ssh/id_rsa): [Tekan ENTER]
    ```
+d. Buat passphrase (opsional, kosongkan jika tidak ingin password):
 
-d. 
 
 #### Contoh
 
