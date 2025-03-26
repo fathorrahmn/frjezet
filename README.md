@@ -60,8 +60,7 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
    ```
    docker compose run yoyo service bash
    ```
-   _Menandakan sudah masuk ke container yoyo)
-
+   _Menandakan sudah masuk ke container yoyo_
 * Cek tabel di DB Service (tabel belum ada dan perlu dicek):
    Jalankan:
    ```
@@ -72,7 +71,7 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
    ```
    docker compose exec db_service bash
    ```
-   (Jangan gunakan run, karena container sudah berjalan!)
+   _Jangan gunakan run, karena container sudah berjalan!_
 * Masuk ke user Postgres:
 ```
 su – postgres
@@ -83,12 +82,12 @@ su – postgres
   ```
   - Cek daftar database: ```\l```,
   - Cek daftar tabel: ```\dt```
-   (Tabel di DB Service mungkin belum ada!)
+    _Tabel di DB Service mungkin belum ada!_
 * Jalankan migrasi tabel:
    ```
    yoyo apply
    ```
-   Saat diminta konfirmasi migrasi, ketik Y.
+   _Saat diminta konfirmasi migrasi, ketik Y._
 -------------------------
 
 * Kettikan perintiah berikut : Docker compose run yoyo sercive bash
