@@ -1,14 +1,14 @@
 # Comprehensive Guide to STB Dashboard Setup and Configuration: Installation, Deployment, Database Migration with Docker and Microservices
 
-* [1. Membuat SSH Key Di linux (WSL)](https://github.com/e-inwork/stb/README#mengunduh-repository)
-* [2. Git Clone dari GitHub menggunakan SSH Key](https://github.com/datascienceid/README#memperbarui-repository)
+* [Membuat SSH Key Di linux (WSL)](https://github.com/e-inwork/stb/README#mengunduh-repository)
+* [Git Clone dari GitHub menggunakan SSH Key](https://github.com/datascienceid/README#memperbarui-repository)
 * [Mengunggah perubahan ke dalam repository](https://github.com/datascienceid/README#mengunggah-perubahan)
 * [Menghapus file](https://github.com/datascienceid/README#menghapus-file)
 * [Branching](https://github.com/datascienceid/README#branching)
 * [Perintah tambahan](https://github.com/datascienceid/README#perintah-tambahan)
 * [gitignore](https://github.com/datascienceid/README#gitignore)
 
-## 1. Membuat SSH Key Di linux (WSL)
+## Membuat SSH Key Di linux (WSL)
 
 * Buka Terminal WSL
 
@@ -33,26 +33,29 @@
    ssh-xxx AAA sampai akhir
    ```
 
-## 2. Git Clone dari GitHub menggunakan SSH Key
+## Git Clone dari GitHub menggunakan SSH Key
 * Masuk ke GitHub → Settings → SSH and GPG keys → New SSH key
 * Paste SSH Public Key
 * Klik Add SSH key
+* Buat dan tentukan repository di komputer lokal untuk clone, seperti contoh berikut.
+   ```
+   ubuntu@msi:~/project/ (git clone disini)
+   ```
 * Setelah SSH key berhasil dikonfigurasi, jalankan perintah berikut untuk clone repository:
    ```
    git clone git@github.com:e-inwork/stb.git
    ```
-
+   
 ## STB DASHBOARD SETUP AND CONFIGURATION : 
+Setelah git clone, cek repository: ```Ubuntu@MSI:~/projects/stb/microservice$```. 
 
-## 3 Mengunggah Perubahan
+Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service```  dan buka dengan perintah ```code .``` Enter.
 
-Jangan lupa untuk melakukan pull terlebih dahulu sebelum melakukan push.
+## Create Docker Service Network
+* Masuk ke repository ```Ubuntu@MSI:~/projects/stb/microservice$/db-service```
+* Buat service network ```docker network create sercive_network```
+* Jalankan service network dengan ```docker compose up -d``` 
 
-**Tambah file baru atau ubah file**
-
-```
-git add <nama file>
-```
 
 **Tambah beberapa file baru atau ubah beberapa file sekaligus**
 ```
