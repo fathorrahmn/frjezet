@@ -10,25 +10,25 @@
 
 ## 1. Membuat SSH Key Di linux (WSL)
 
-a. Buka Terminal WSL
+* Buka Terminal WSL
 
-b. Jalankan perintah berikut:
+* Jalankan perintah berikut:
    ```
    ssh-keygen
    ```
-c. Masukkan lokasi penyimpanan key (tekan ENTER untuk default ~/.ssh/id_xxx):
+* Masukkan lokasi penyimpanan key (tekan ENTER untuk default ~/.ssh/id_xxx):
    ```
    Enter file in which to save the key (/home/user/.ssh/id_xxx): [Tekan ENTER]
    ```
-d. Buat passphrase (opsional, kosongkan jika tidak ingin password):
+* Buat passphrase (opsional, kosongkan jika tidak ingin password):
    ```
    Enter passphrase (empty for no passphrase): [Masukkan password atau tekan ENTER]
    ```
-e. Anda bisa melihat SSH Public Key dengan perintah dibawah dan tekan enter :
+* Anda bisa melihat SSH Public Key dengan perintah dibawah dan tekan enter :
    ```
    cat ~/.ssh/id_xxx.pub
    ```
-f. Salin SSH Public Key 
+* Salin SSH Public Key 
    ```
    ssh-xxx AAA sampai akhir
    ```
