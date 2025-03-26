@@ -16,16 +16,22 @@ b. Jalankan perintah berikut:
    ```
    ssh-keygen
    ```
-c. Masukkan lokasi penyimpanan key (tekan ENTER untuk default ~/.ssh/id_rsa):
+c. Masukkan lokasi penyimpanan key (tekan ENTER untuk default ~/.ssh/id_xxx):
    ```
-   Enter file in which to save the key (/home/user/.ssh/id_rsa): [Tekan ENTER]
+   Enter file in which to save the key (/home/user/.ssh/id_xxx): [Tekan ENTER]
    ```
 d. Buat passphrase (opsional, kosongkan jika tidak ingin password):
    ```
    Enter passphrase (empty for no passphrase): [Masukkan password atau tekan ENTER]
    ```
-
-
+e. Anda bisa melihat SSH Public Key dengan perintah dibawah dan tekan enter :
+   ```
+   cat ~/.ssh/id_xxx.pub
+   ```
+f. Salin SSH Public Key 
+   ```
+   ssh-xxx AAA sampai akhir
+   ```
 
 #### Contoh
 
