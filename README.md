@@ -11,6 +11,7 @@
 ## 1. Membuat SSH Key Di linux (WSL)
 
 a. Buka Terminal WSL
+
 b. Jalankan perintah berikut:
 ```
 ssh-keygen
