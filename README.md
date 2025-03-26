@@ -56,11 +56,7 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
 * Jalankan service network dengan ```docker compose up -d``` 
 
 **Lakukan migrate Di DB Service**
-* Masuk ke app container yoyo:
-   ```
-   docker compose run yoyo service bash
-   ```
-   _Menandakan sudah masuk ke container yoyo_
+* Masuk ke app container yoyo: ```docker compose run yoyo service bash``` _Menandakan sudah masuk ke container yoyo_
 * Cek tabel di DB Service (tabel belum ada dan perlu dicek):
    Jalankan:
    ```
@@ -73,9 +69,9 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
    ```
    _Jangan gunakan run, karena container sudah berjalan!_
 * Masuk ke user Postgres:
-```
-su – postgres
-```
+   ```
+   su – postgres
+   ```
 * Masuk ke database dengan psql:
   ```
   psql
