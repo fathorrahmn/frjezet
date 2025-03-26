@@ -69,7 +69,23 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
    docker ps
    ```
   (Cek container yang berjalan, pastikan ada ```db-service-yoyo``` & ```db_service```)
-  
+* Masuk ke SQL dalam DB Service:
+   ```
+   docker compose exec db_service bash
+   ```
+   (Jangan gunakan run, karena container sudah berjalan!)
+* Masuk ke user Postgres:
+```
+su – postgres
+```
+* Masuk ke database dengan psql:
+  ```
+  psql
+  ```
+  -Cek daftar database: ```\l```,
+  - Cek daftar tabel: ```\dt```
+
+
 * Kettikan perintiah berikut : Docker compose run yoyo sercive bash
   ket. Ini menandakaan sudah masuk ke app container yoyo
 * migratte tabel yang ada di DB service, tabel ini masih belum ada dan harus di cek.
