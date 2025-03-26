@@ -42,16 +42,9 @@
    git clone git@github.com:e-inwork/stb.git
    ```
 
-#### Contoh
+## STB DASHBOARD SETUP AND CONFIGURATION : 
 
-```
-git pull https://github.com/datascienceid/instagram.git master
-From https://github.com/datascienceid/instagram
- * branch            master     -> FETCH_HEAD
-Already up-to-date.
-```
-
-## Mengunggah Perubahan
+## 3 Mengunggah Perubahan
 
 Jangan lupa untuk melakukan pull terlebih dahulu sebelum melakukan push.
 
