@@ -82,8 +82,14 @@ su – postgres
   ```
   psql
   ```
-  -Cek daftar database: ```\l```,
+  - Cek daftar database: ```\l```,
   - Cek daftar tabel: ```\dt```
+   (Tabel di DB Service mungkin belum ada!)
+* Jalankan migrasi tabel:
+   ```
+   yoyo apply
+   ```
+   Saat diminta konfirmasi migrasi, ketik Y.
 
 
 * Kettikan perintiah berikut : Docker compose run yoyo sercive bash
