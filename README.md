@@ -94,6 +94,15 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
 * buka browser dan masukkan ```localhost:9901```
 * Proxy bertujuan menyambungkan semua network ke satu port dengan berbagai jenis port.
 * Untuk melihat yang sudah digabungkan dalam satu proxy, buka browser. Di daftar command, cari clusters untuk menampilkan berbagai proxy.
+* Jika dalam cluster muncul superuser-service, user-service, group-service, dan lainnya, berarti proxy berjalan baik.
+* Jika tidak, lakukan langkah berikut:
+  - Masuk ke proxy-service: ```cd ~/projects/stb/microservice/proxy-service```
+  - Matikan proxy: ```docker compose down```
+  - Build ulang tanpa cache: ```docker compose build --no-cache```
+  - Dan hidupkan kembali : ```docker compose up -d```
+
+
+
 
 
 
