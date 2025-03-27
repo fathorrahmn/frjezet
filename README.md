@@ -101,7 +101,7 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
   - Build ulang tanpa cache: ```docker compose build --no-cache```
   - Dan hidupkan kembali : ```docker compose up -d```
 
-## Install NVM :
+## Install NVM & NPM :
 * masukkan perintah berikut ```curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash```
 * Setelah instalasi, tambahkan NVM ke ```~/.bashrc``` atau ```~/.zshrc```:
   ```
@@ -113,15 +113,9 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
 * Instal Node.js versi 22: ```nvm install 22```
 * Gunakan Node.js versi 22: ```nvm use 22``` _Catatan: Program hanya berjalan dengan Node.js 22 atau lebih_
 * Instal dependensi: ```npm install```
-
-
-  --------------
-* Jika sudah selesai intall nvm. Buka terminal di super user dashboard ```ubuntu@MSI:~/projects/stb/dashaboard/superuser-dashboard```. maka lakukan perintah nvm install 22
-* Seteleh selesai instalasi nvm install 22. Baru kettikan perintah nvm use 22. Program kita menggunakan nvm 22 kalo kurang dari 22 tidak akan jalan. 
-* Setelah nvm use 22 selesai kemudian npm isntall.
-
-
-
-
-
+* Jika saat ```npm install``` muncul perintah audit, jalankan ```npm audit fix```
+* Setelah audit selesai, buat file ```.env.local``` di superuser-dashboard
+  ```
+  NEXT_PUBLIC_ENVOY_HOST=http://localhost:8080/
+  ```
 
