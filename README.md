@@ -109,6 +109,10 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
   ```
+* Setelah instalasi NVM selesai, buka terminal di super user dashboard: ```cd ~/projects/stb/dashaboard/superuser-dashboard```
+* Instal Node.js versi 22: ```nvm install 22```
+* Gunakan Node.js versi 22: ```nvm use 22``` _Catatan: Program hanya berjalan dengan Node.js 22 atau lebih_
+* Instal dependensi: ```npm install```
 
 
   --------------
