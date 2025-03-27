@@ -118,4 +118,5 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
   ```
   NEXT_PUBLIC_ENVOY_HOST=http://localhost:8080/
   ```
-
+* Jalankan perintah berikut untuk membuka dashboard di browser: ```npm run dev``` atau akses __localhost:3000 di browser__
+* 
