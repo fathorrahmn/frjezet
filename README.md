@@ -1,13 +1,5 @@
 # Comprehensive Guide to STB Dashboard Setup and Configuration: Installation, Deployment, Database Migration with Docker and Microservices
 
-* [Membuat SSH Key Di linux (WSL)](https://github.com/e-inwork/stb/README#mengunduh-repository)
-* [Git Clone dari GitHub menggunakan SSH Key](https://github.com/datascienceid/README#memperbarui-repository)
-* [Mengunggah perubahan ke dalam repository](https://github.com/datascienceid/README#mengunggah-perubahan)
-* [Menghapus file](https://github.com/datascienceid/README#menghapus-file)
-* [Branching](https://github.com/datascienceid/README#branching)
-* [Perintah tambahan](https://github.com/datascienceid/README#perintah-tambahan)
-* [gitignore](https://github.com/datascienceid/README#gitignore)
-
 ## Membuat SSH Key Di linux (WSL)
 
 * Buka Terminal WSL
@@ -111,12 +103,11 @@ Lalu, buka DB Service: ```Ubuntu@MSI:~/projects/stb/microservice$/db-service``` 
   ```
 * Setelah instalasi NVM selesai, buka terminal di super user dashboard: ```cd ~/projects/stb/dashaboard/superuser-dashboard```
 * Instal Node.js versi 22: ```nvm install 22```
-* Gunakan Node.js versi 22: ```nvm use 22``` _Catatan: Program hanya berjalan dengan Node.js 22 atau lebih_
+* Gunakan Node.js versi 22: ```nvm use 22``` __Program hanya berjalan dengan Node.js 22 atau lebih__
 * Instal dependensi: ```npm install```
 * Jika saat ```npm install``` muncul perintah audit, jalankan ```npm audit fix```
-* Setelah audit selesai, buat file ```.env.local``` di superuser-dashboard
+* Setelah audit selesai, buat file ```.env.local``` di __superuser-dashboard__
   ```
   NEXT_PUBLIC_ENVOY_HOST=http://localhost:8080/
   ```
-* Jalankan perintah berikut untuk membuka dashboard di browser: ```npm run dev``` atau akses __localhost:3000 di browser__
-* 
+* Jalankan perintah berikut untuk membuka dashboard di browser: ```npm run dev``` atau akses __localhost:3000__ di browser
